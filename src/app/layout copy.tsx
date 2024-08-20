@@ -4,7 +4,6 @@ import { REM } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import Footer from "@/components/Footer";
-import { Toaster } from "@/components/ui/sonner";
 
 const rem = REM({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
@@ -15,14 +14,14 @@ export const metadata: Metadata = {
   icons: [
     {
       rel: "icon",
-      type: "image/png",
-      url: "/favicon-dark.png",
+      type: "image/x-icon",
+      url: "/favicon-light.png",
       media: "(prefers-color-scheme: light)",
     },
     {
       rel: "icon",
       type: "image/png",
-      url: "/favicon-light.png",
+      url: "/favicon-dark.png",
       media: "(prefers-color-scheme: dark)",
     },
   ],
@@ -42,9 +41,8 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <Toaster />
             {children}
-            <Footer />
+            <Footer/>
           </ThemeProvider>
         </body>
       </html>
