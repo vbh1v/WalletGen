@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# WalletGen
 
-## Getting Started
+WalletGen is a React functional component designed to create and manage cryptocurrency wallets. With WalletGen, you can effortlessly generate new wallets, or input an existing recovery phrase to recover one. The component showcases both private and public keys, provides an option to copy them directly to your clipboard, and includes features to hide or reveal sensitive data as needed.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Create Wallet:** Generate a new wallet and access the corresponding private and public keys.
+- **Recover Wallet:** Input an existing recovery phrase to regenerate wallet keys.
+- **Visibility Control:** Toggle the display of private keys and recovery phrases to maintain security.
+- **Copy Functionality:** Easily copy private keys, public keys, and recovery phrases to your clipboard.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To get started, ensure that you have Node.js and npm installed on your system.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone this repository or add the WalletGen component to your existing React project.
+2. Install the required dependencies:
 
-## Learn More
+    ```bash
+    npm install tweetnacl bip39 ed25519-hd-key @solana/web3.js sonner lucide-react
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+3. Import and integrate the WalletGen component into your React application.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
