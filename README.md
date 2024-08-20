@@ -5,7 +5,6 @@ WalletGen is a React functional component designed to create and manage cryptocu
 ## Features
 
 - **Create Wallet:** Generate a new wallet and access the corresponding private and public keys.
-- **Recover Wallet:** Input an existing recovery phrase to regenerate wallet keys.
 - **Visibility Control:** Toggle the display of private keys and recovery phrases to maintain security.
 - **Copy Functionality:** Easily copy private keys, public keys, and recovery phrases to your clipboard.
 
